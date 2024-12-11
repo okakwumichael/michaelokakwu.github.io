@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Dish Pick</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dish Pick</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="deals.html">Deals</a>
+        <a href="cart.html">My Cart</a>
+        <a href="account.html">Account Settings</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Sign Up</h2>
+      <section class="signup-section">
+        <form action="signup_process.php" method="POST" class="signup-form">
+          <fieldset>
+            <legend>Create Your Account</legend>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required maxlength="20" />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8" />
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your password" required />
+
+            <label for="terms">
+              <input type="checkbox" id="terms" name="terms" required />
+              I agree to the <a href="terms.html">Terms and Conditions</a>
+            </label>
+          </fieldset>
+
+          <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Log In</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Dish Pick. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
