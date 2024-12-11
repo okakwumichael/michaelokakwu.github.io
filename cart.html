@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dish Pick - Online Grocery Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dish Pick</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="deals.html">Deals</a>
+        <a href="account.html">Account</a>
+        <div class="cart-menu">
+          <button id="cart-button">
+            🛒 Cart (<span id="cart-count">0</span>)
+          </button>
+          <div id="cart-dropdown" class="cart-dropdown">
+            <h3>Your Cart</h3>
+            <ul id="cart-items">
+              <li>Your cart is empty.</li>
+            </ul>
+            <div class="cart-total">
+              <p>Total: $<span id="cart-total">0.00</span></p>
+            </div>
+            <a href="checkout.html" class="checkout-btn">Checkout</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-banner">
+        <h2>Fresh Groceries Delivered to Your Doorstep</h2>
+        <p>Handpicked quality, unbeatable convenience. Shop now and save big!</p>
+        <a href="shop.html" class="shop-now-btn">Shop Now</a>
+      </section>
+
+      <section class="categories">
+        <h3>Browse by Category</h3>
+        <!-- Category list goes here -->
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Dish Pick. All Rights Reserved.</p>
+      <nav>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse Groceries - Dish Pick</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* General Body Styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #d41111;
+        color: white;
+        padding: 10px 20px;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      /* Navigation Bar Styling */
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #d41111;
+        margin-top: 10px;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav li {
+        margin: 0;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #b10f0f;
+      }
+
+      /* Product Grid Styling */
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .product-item {
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: #f9f9f9;
+      }
+
+      .product-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .product-name {
+        margin-top: 8px;
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+
+      .product-price {
+        color: green;
+        margin-top: 5px;
+        font-size: 1em;
+      }
+
+      .add-to-cart {
+        margin-top: 10px;
+        padding: 8px 12px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .add-to-cart:hover {
+        background-color: #218838;
+      }
+
+      /* Footer Styling */
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Dish Pick</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="browse.html">Browse Products</a></li>
+          <li><a href="deals.html">Deals & Offers</a></li>
+          <li><a href="account.html">Account Settings</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Browse Fresh Groceries</h2>
+      <section class="search-filter">
+        <input type="text" placeholder="Search by product name, category..." />
+        <button>Search</button>
+      </section>
+      <section class="categories">
+        <h3>Filter by Category:</h3>
+        <div>
+          <button>Fruits</button>
+          <button>Vegetables</button>
+          <button>Dairy</button>
+          <button>Snacks</button>
+          <button>Beverages</button>
+        </div>
+      </section>
+
+      <section class="product-list">
+        <div class="product-grid">
+          <div class="product-item">
+            <img src="apples.png" alt="Fresh Red Apples" />
+            <div class="product-name">Red Apples</div>
+            <div class="product-price">$3.99 / lb</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-item">
+            <img src="milk.png" alt="1 Gallon of Whole Milk" />
+            <div class="product-name">Whole Milk (1 Gallon)</div>
+            <div class="product-price">$4.49</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-item">
+            <img src="Bread-Recipe-5-2.jpg" alt="Whole Wheat Bread" />
+            <div class="product-name">Whole Wheat Bread</div>
+            <div class="product-price">$2.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-item">
+            <img src="egg.png" alt="Fresh Eggs" />
+            <div class="product-name">Fresh Carrots</div>
+            <div class="product-price">$1.49 / lb</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-item">
+            <img src="orangejuice.png" alt="Orange Juice" />
+            <div class="product-name">Orange Juice (1L)</div>
+            <div class="product-price">$3.49</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-item">
+            <img src="cocolatebar.png" alt="Chocolate Bar" />
+            <div class="product-name">Milk Chocolate Bar</div>
+            <div class="product-price">$1.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Dish Pick. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

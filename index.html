@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dish Pick - Your Online Grocery Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Styling for product grid */
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .product-item {
+        text-align: center;
+      }
+      .product-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .product-name {
+        margin-top: 8px;
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+      .product-price {
+        color: green;
+        margin-top: 5px;
+        font-size: 1em;
+      }
+      .badge {
+        position: absolute;
+        background-color: #ff6f61;
+        color: white;
+        font-size: 0.8em;
+        padding: 4px 8px;
+        border-radius: 4px;
+        top: 10px;
+        left: 10px;
+      }
+      @media (max-width: 600px) {
+        .product-grid {
+          grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        }
+        .product-name {
+          font-size: 0.9em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Dish Pick</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="browse.html">Shop</a>
+        <a href="deals.html">Deals</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="account.html">Account</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="search-bar">
+        <input
+          type="text"
+          placeholder="Search for fresh groceries..."
+          aria-label="Search groceries"
+          style="width: 100%; padding: 10px; font-size: 1em; margin: 20px 0;"
+        />
+      </section>
+
+      <section class="featured">
+        <h2>Fresh Picks of the Day</h2>
+        <div class="product-grid">
+          <div class="product-item">
+            <span class="badge">Organic</span>
+            <img src="apples.png" alt="Fresh Red Apples" />
+            <div class="product-name">Fresh Red Apples</div>
+            <div class="product-price">$3.99 / lb</div>
+          </div>
+          <div class="product-item">
+            <img src="chicken.png" alt="Whole Free-Range Chicken" />
+            <div class="product-name">Free-Range Chicken</div>
+            <div class="product-price">$12.99 / each</div>
+          </div>
+          <div class="product-item">
+            <img src="milk.png" alt="2% Milk Carton" />
+            <div class="product-name">2% Milk Carton</div>
+            <div class="product-price">$4.49 / gallon</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recommendations">
+        <h2>Recommended for You</h2>
+        <div class="product-grid">
+          <div class="product-item">
+            <img src="ripe-bananas.jpg" alt="Ripe Bananas" />
+            <div class="product-name">Ripe Bananas</div>
+            <div class="product-price">$0.59 / lb</div>
+          </div>
+          <div class="product-item">
+            <img src="Bread-Recipe-5-2.jpg" alt="Freshly Baked Bread" />
+            <div class="product-name">Freshly Baked Bread</div>
+            <div class="product-price">$2.99 / loaf</div>
+          </div>
+          <div class="product-item">
+            <img src="egg.png" alt="Dozen Brown Eggs" />
+            <div class="product-name">Dozen Brown Eggs</div>
+            <div class="product-price">$3.99 / dozen</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Dish Pick. Fresh groceries delivered to your door.</p>
+    </footer>
+  </body>
+</html>

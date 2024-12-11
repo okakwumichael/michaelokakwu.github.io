@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Forum - Dish Pick</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .forum {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+      }
+      .forum-category {
+        margin-bottom: 20px;
+      }
+      .forum-category h3 {
+        margin-bottom: 10px;
+        color: #4CAF50;
+      }
+      .thread-list {
+        list-style: none;
+        padding: 0;
+      }
+      .thread-item {
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .thread-item:last-child {
+        border-bottom: none;
+      }
+      .thread-title {
+        font-weight: bold;
+        font-size: 1.1em;
+        color: #333;
+      }
+      .thread-meta {
+        font-size: 0.9em;
+        color: #555;
+      }
+      .create-thread {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .create-thread button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .create-thread button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Dish Pick</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse Products</a>
+        <a href="community.html">Community Forum</a>
+        <a href="deals.html">Deals & Offers</a>
+        <a href="account.html">Account Settings</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Community Forum</h2>
+      <p>Connect with fellow food enthusiasts! Share your recipes, tips, and experiences with Dish Pick products.</p>
+      <section class="forum">
+        <!-- Recipes and Cooking Tips Category -->
+        <div class="forum-category">
+          <h3>Recipes and Cooking Tips</h3>
+          <ul class="thread-list">
+            <li class="thread-item">
+              <span class="thread-title">
+                <a href="thread1.html">5 Quick Meals You Can Make with Dish Pick Products</a>
+              </span>
+              <span class="thread-meta">30 replies | Last updated: Dec 10, 2024</span>
+            </li>
+            <li class="thread-item">
+              <span class="thread-title">
+                <a href="thread2.html">Best Ways to Store Fresh Produce</a>
+              </span>
+              <span class="thread-meta">18 replies | Last updated: Dec 9, 2024</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Product Reviews Category -->
+        <div class="forum-category">
+          <h3>Product Reviews</h3>
+          <ul class="thread-list">
+            <li class="thread-item">
+              <span class="thread-title">
+                <a href="thread3.html">Top 5 Snacks from Dish Pick</a>
+              </span>
+              <span class="thread-meta">25 replies | Last updated: Dec 8, 2024</span>
+            </li>
+            <li class="thread-item">
+              <span class="thread-title">
+                <a href="thread4.html">Customer Favorites: Best-Rated Products</a>
+              </span>
+              <span class="thread-meta">15 replies | Last updated: Dec 7, 2024</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Shopping Tips and Deals Category -->
+        <div class="forum-category">
+          <h3>Shopping Tips and Deals</h3>
+          <ul class="thread-list">
+            <li class="thread-item">
+              <span class="thread-title">
+                <a href="thread5.html">How to Save Money with Weekly Discounts</a>
+              </span>
+              <span class="thread-meta">10 replies | Last updated: Dec 6, 2024</span>
+            </li>
+            <li class="thread-item">
+              <span class="thread-title">
+                <a href="thread6.html">Membership Benefits: Is Premium Worth It?</a>
+              </span>
+              <span class="thread-meta">8 replies | Last updated: Dec 5, 2024</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="create-thread">
+        <button onclick="window.location.href='new-thread.html'">Create New Thread</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Dish Pick. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

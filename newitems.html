@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest Arrivals - Dish Pick</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Styling for latest arrivals grid */
+      .latest-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .latest-item {
+        text-align: center;
+      }
+      .latest-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .latest-name {
+        margin-top: 8px;
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+      .arrival-date {
+        color: #666;
+        font-size: 0.9em;
+      }
+      @media (max-width: 600px) {
+        .latest-grid {
+          grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        }
+        .latest-name {
+          font-size: 0.9em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Dish Pick</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="deals.html">Deals</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="account.html">Account</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Latest Grocery Arrivals</h2>
+      <section class="new-arrivals">
+        <div class="latest-grid">
+          <div class="latest-item">
+            <img src="images/fresh-apples.jpg" alt="Fresh Red Apples" />
+            <div class="latest-name">Fresh Red Apples</div>
+            <div class="arrival-date">Arrived: Dec 1, 2024</div>
+          </div>
+          <div class="latest-item">
+            <img src="images/organic-carrots.jpg" alt="Organic Carrots" />
+            <div class="latest-name">Organic Carrots</div>
+            <div class="arrival-date">Arrived: Dec 5, 2024</div>
+          </div>
+          <div class="latest-item">
+            <img src="images/whole-chicken.jpg" alt="Whole Free-Range Chicken" />
+            <div class="latest-name">Free-Range Chicken</div>
+            <div class="arrival-date">Arrived: Nov 30, 2024</div>
+          </div>
+          <div class="latest-item">
+            <img src="images/milk-carton.jpg" alt="2% Milk Carton" />
+            <div class="latest-name">2% Milk Carton</div>
+            <div class="arrival-date">Arrived: Dec 2, 2024</div>
+          </div>
+          <div class="latest-item">
+            <img src="images/ripe-bananas.jpg" alt="Ripe Bananas" />
+            <div class="latest-name">Ripe Bananas</div>
+            <div class="arrival-date">Arrived: Dec 6, 2024</div>
+          </div>
+          <div class="latest-item">
+            <img src="images/fresh-bread.jpg" alt="Freshly Baked Bread" />
+            <div class="latest-name">Freshly Baked Bread</div>
+            <div class="arrival-date">Arrived: Dec 4, 2024</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Dish Pick. Fresh groceries delivered to your door.</p>
+    </footer>
+  </body>
+</html>
